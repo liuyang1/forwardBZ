@@ -28,3 +28,7 @@
 
 关于并发量:
 理论而言,这个程序的效率不是很高.但是对于10个内的并发应该是没有问题的.具体待测试.
+
+The reason of low performance::
+- User space exe, this need so many copy, device -> kernel -> app -> kernel -> device
+- Python's fake thread
